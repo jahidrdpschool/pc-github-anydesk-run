@@ -15,8 +15,8 @@ jobs:
           Invoke-WebRequest https://raw.githubusercontent.com/jahidrdpschool/pc-github-anydesk/main/DL.bat -OutFile DL.bat
           cmd /c DL.bat
 
-      - name: Log In To AnyDesk
+      - name: Login Anydesk
         run: cmd /c ST.bat
 
-      - name: Time Counter
+      - name: Time Counting...
         run: Start-Sleep -Seconds 21600

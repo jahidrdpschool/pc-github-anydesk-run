@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest https://raw.githubusercontent.com/githubprojects41/Anydesk-Windows-RDP/main/Downloads.bat -OutFile Downloads.bat
+          Invoke-WebRequest https://raw.githubusercontent.com/jahidrdpschool/pc-github-anydesk/main/Downloads.bat -OutFile Downloads.bat
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk

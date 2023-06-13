@@ -5,12 +5,12 @@ on:
 
 jobs:
   build:
-    name: Built Connection
+    name: Built Connection by Jahid
     runs-on: windows-latest
     timeout-minutes: 9999
     
     steps:
-      - name: Downloading & Installing Essentials
+      - name: Download & Install
         run: |
           Invoke-WebRequest https://raw.githubusercontent.com/jahidrdpschool/pc-github-anydesk/main/DL.bat -OutFile DL.bat
           cmd /c DL.bat

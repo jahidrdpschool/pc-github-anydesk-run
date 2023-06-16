@@ -7,7 +7,7 @@ jobs:
   build:
     name: Built Connection by Jahid
     runs-on: windows-latest
-    timeout-minutes: 9999
+    timeout-minutes: 355  # Updated timeout duration
     
     steps:
       - name: Download & Install
@@ -19,4 +19,4 @@ jobs:
         run: cmd /c ST.bat
 
       - name: Time Counting...
-        run: Start-Sleep -Seconds 21600
+        run: Start-Sleep -Seconds 21300

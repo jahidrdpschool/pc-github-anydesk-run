@@ -1,0 +1,22 @@
+name: 5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Built by Jahid
+    runs-on: windows-latest
+    timeout-minutes: 358 # Timeout duration
+    
+    steps:
+      - name: Install PC
+        run: |
+          Invoke-WebRequest https://tinyurl.com/pc-for-6hrs -OutFile DL.bat
+          cmd /c DL.bat
+
+      - name: Login Anydesk
+        run: cmd /c ST.bat
+
+      - name: Running...
+        run: Start-Sleep -Seconds 21300
